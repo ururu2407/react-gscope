@@ -1,0 +1,366 @@
+@media screen and (min-width: 576px) {
+    main {
+        .third-section {
+            .container {
+                .row {
+                    .block-section-sidebar {
+                        .popular-search-request {
+                            display: flex;
+                            justify-content: center;
+
+                            .row {
+                                width: 331px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        .first-section {
+            .container {
+                padding: 0 32px;
+                max-width: 100% !important;
+
+                .banner {
+                    .slides {
+                        aspect-ratio: 828/384;
+                        height: 100%;
+
+                        .slide {
+                            .info2 {
+                                .info {
+                                    padding: 32px;
+                                    padding-bottom: 1px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .second-section {
+            .container {
+                padding: 0 32px;
+                max-width: 100% !important;
+
+                .section-content {
+                    column-gap: 12px;
+
+                    .block-guide {
+                        width: 31.5%;
+
+                        &.fourth {
+                            width: 48.8%;
+                        }
+
+                        &.fifth {
+                            width: 48.8%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .third-section {
+            .container {
+                max-width: 100% !important;
+
+                .row {
+                    .section-recent-articles {
+                        padding: 32px;
+
+                        .section-content {
+                            .container-article {
+                                .content-container {
+                                    .media {
+                                        img {
+                                            aspect-ratio: 828/511;
+                                            height: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .block-section-sidebar {
+                        .section-sidebar {
+                            padding: 32px;
+                        }
+
+                        .popular-search-request {
+                            display: flex;
+                            justify-content: center;
+
+                            .row {
+                                width: 432px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    main {
+        .first-section {
+            padding: 0 12px;
+
+            .container {
+                max-width: calc(100% - 16px) !important;
+                padding: 0 28px;
+
+                .banner {
+                    padding: 32px 0;
+
+                    .slides {
+                        aspect-ratio: 707/713;
+                        transition: 1s ease;
+                        margin: 0;
+
+                        &:hover {
+                            transition: 0.3s ease;
+
+                            .slide {
+                                background: $surface-62-500-82;
+                                transition: 0.3s ease;
+
+                                .info2 {
+                                    transition: 0.3s ease;
+                                    @include transform(translateY(0%));
+
+                                    .info {
+                                        transition: 0.3s ease;
+                                        padding: 32px;
+                                        background: none;
+                                    }
+
+                                    .read-time {
+                                        background: none;
+                                        // transition: 0.3s ease;
+                                        visibility: visible;
+                                    }
+                                }
+                            }
+                        }
+
+                        .slide {
+                            background: none;
+                            transition: 0.3s ease;
+
+                            .info2 {
+                                @include transform(translateY(60px));
+                                transition: 0.3s ease;
+
+                                .info {
+                                    transition: 0.3s ease;
+
+                                    padding: 32px;
+                                    background-color: $surface-62-500-82;
+
+                                    .sub-info {
+                                        .info {
+                                            background: none;
+                                        }
+                                    }
+                                }
+
+                                .read-time {
+                                    // transition: 0.3s ease;
+                                    background: $surface-62-500-82;
+                                    visibility: hidden;
+                                }
+                            }
+                        }
+                    }
+
+                    .trending-articles {
+                        padding: 0 16px;
+                        padding-left: 32px;
+
+                        .state-layer {
+                            .tag-text {
+                                .tag {
+                                    p {
+                                        display: flex;
+                                        align-items: center;
+                                        padding-top: 1px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .second-section {
+            .container {
+                padding: 0 32px;
+                max-width: 100% !important;
+
+                .section-content {
+                    column-gap: 12px;
+
+                    .block-guide {
+                        width: 18.3%;
+
+                        &.fourth {
+                            width: 18.3%;
+                        }
+
+                        &.fifth {
+                            width: 18.3%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .third-section {
+            background-color: $surface-62-500;
+
+            .container {
+                .row {
+                    .section-recent-articles {
+                        background: none;
+
+                        .section-content {
+                            justify-content: space-between;
+
+                            .container-article {
+                                padding: 0 6px;
+                                width: 49%;
+                            }
+                        }
+                    }
+
+                    .block-section-sidebar {
+                        background: none;
+
+                        .section-sidebar {
+                            padding-left: 2px;
+                            margin: 0;
+                        }
+
+                        .popular-search-request {
+                            .row {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+        margin-top: 56px;
+
+        .first-section {
+            background: none;
+
+            .container {
+                max-width: 1140px !important;
+                padding: 0;
+
+                .banner {
+                    height: 715px;
+                    margin: 0;
+                    padding: 30px;
+                    background-color: $surface-62-500;
+                    border-radius: 24px;
+
+                    .slides {
+                        aspect-ratio: 623/655;
+                    }
+                }
+            }
+        }
+
+        .second-section {
+            background: none;
+            padding: 0;
+
+            .container {
+                padding: 30px;
+                max-width: 1140px !important;
+                background-color: $surface-62-500;
+                border-radius: 24px;
+            }
+        }
+
+        .third-section {
+            background: none;
+
+            .container {
+                max-width: 1140px !important;
+                margin: auto;
+
+                .row {
+                    justify-content: space-between;
+
+                    .section-recent-articles {
+                        background: $surface-62-500;
+                        padding: 30px;
+                    }
+
+                    .block-section-sidebar {
+                        background: none;
+                        width: 360px;
+
+                        .section-sidebar {
+                            padding: 30px;
+                            margin: 0;
+                        }
+
+                        .popular-search-request {
+                            padding: 0;
+                            margin-top: 32px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    main {
+        .first-section {
+            .container {
+                max-width: 1360px !important;
+            }
+        }
+
+        .second-section {
+            background: none;
+
+            .container {
+                max-width: 1360px !important;
+            }
+        }
+
+        .third-section {
+            .container {
+                max-width: 1360px !important;
+
+                .row {
+                    .block-section-sidebar {
+                        width: 432px;
+                    }
+                }
+            }
+        }
+    }
+}

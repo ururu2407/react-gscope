@@ -1,0 +1,93 @@
+@media screen and (min-width: 576px) {
+    .container {
+        max-width: calc(100% - 10px) !important;
+    }
+
+    body {
+        .offcanvas.offcanvas-start {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: calc(100% - 16px) !important;
+    }
+}
+
+@media screen and (min-width: 992px) {}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1140px !important;
+    }
+
+    header {
+
+        .container {
+            .row {
+                height: 88px;
+                padding: 22px 22px;
+
+                .navigation {
+                    .active-link {
+                        bottom: -23px;
+                    }
+
+                    .nav-item {
+                        .dropdown-menu {
+                            margin-top: 21px;
+                        }
+                    }
+                }
+
+                .btn-group {
+                    >.btn:not(:last-child):not(.dropdown-toggle) {
+                        border-radius: 7px;
+                    }
+
+                    .search-xl {
+                        margin-right: 20px;
+                        justify-content: end;
+                    }
+
+                    .btn-primary {
+                        border-radius: 7px;
+                        height: 44px;
+
+                        &:hover,
+                        :focus {
+                            background-color: $state-12;
+                        }
+
+                        p {
+                            margin: 0;
+                        }
+                    }
+
+                    a {
+                        text-decoration: none;
+
+                        .profile {
+                            padding: 8px 12px;
+                            max-width: 170px;
+                            border: 1px solid $primary-green-500;
+                            color: $primary-green-500;
+
+                            &:hover {
+                                border-radius: 7px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .container {
+        max-width: 1360px !important;
+    }
+}

@@ -1,0 +1,781 @@
+@import "/public/config/colors";
+@import "/public/config/fonts";
+
+@font-face {
+    font-family: "MacPawFixel-Bold";
+    src: url('/font/MacPawFixelText-Bold.woff2') format('woff2');
+    // font-weignt: 500;
+}
+
+@font-face {
+    font-family: "MacPawFixel-Semibold";
+    src: url('/font/MacPawFixelText-SemiBold.woff2') format('woff2');
+    // font-weignt: 500;
+}
+
+@font-face {
+    font-family: "MacPawFixel-Medium";
+    src: url('/font/MacPawFixelText-Medium.woff2') format('woff2');
+    // font-weignt: 500;
+}
+
+@font-face {
+    font-family: "MacPawFixel-Regular";
+    src: url('/font/MacPawFixelText-Regular.woff2') format('woff2');
+    // font-weignt: 500;
+}
+
+@mixin transform($transform) {
+    -webkit-transform: $transform;
+    -moz-transform: $transform;
+    -ms-transform: $transform;
+    -o-transform: $transform;
+    transform: $transform;
+}
+
+@mixin transition($transition) {
+    -webkit-transition: #{$transition};
+    -moz-transition: #{$transition};
+    -o-transition: #{$transition};
+    transition: #{$transition};
+}
+
+@mixin transition-delay($transition-delay) {
+    -webkit-transition-delay: #{$transition-delay};
+    -moz-transition-delay: #{$transition-delay};
+    -o-transition-delay: #{$transition-delay};
+    transition-delay: #{$transition-delay};
+}
+
+.headline {
+    .p-headline {
+        height: 16px;
+        margin-bottom: 4px;
+        color: $primary-green-500;
+        font-family: map-get($MacPaw-caption-semibold, family);
+        font-weight: map-get($MacPaw-caption-semibold, weight);
+        font-size: map-get($MacPaw-caption-semibold, size);
+        line-height: map-get($MacPaw-caption-semibold, height);
+        letter-spacing: map-get($MacPaw-caption-semibold, spacing);
+    }
+
+    p {
+        height: 29px;
+        margin: 0;
+        color: $neutral-blackwhite-100;
+        font-family: map-get($MacPaw-body1-medium, family);
+        font-weight: map-get($MacPaw-body1-medium, weight);
+        font-size: map-get($MacPaw-body1-medium, size);
+        line-height: map-get($MacPaw-body1-medium, height);
+        letter-spacing: map-get($MacPaw-body1-medium, spacing);
+    }
+}
+
+main {
+    .first-section {
+        background-color: $surface-62-500;
+        padding: 0 16px;
+        border-radius: 0 0 24px 24px;
+        margin-bottom: 56px;
+
+        .container {
+            .banner {
+                .slides {
+                    padding: 0;
+                    margin-top: 16px;
+                    height: 600px;
+                    margin-bottom: 32px;
+                    background-image: url('./Second_Closed_Beta_Wallpaper\ \(1\).jpg');
+                    background-size: cover;
+                    background-position: center;
+                    border-radius: 18px;
+
+                    .slide {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        height: 100%;
+                        background-color: $surface-62-500-82;
+                        border-radius: 18px;
+                        // margin: 0;
+                        .author-button {
+                            padding: 16px;
+
+                            .author-text {
+                                padding: 10px 8px;
+                                height: 40px;
+
+                                p {
+                                    padding-right: 6px;
+                                    margin: 0;
+                                    color: $neutral-blackwhite-100;
+                                    font-family: map-get($MacPaw-body2-medium, family);
+                                    font-weight: map-get($MacPaw-body2-medium, weight);
+                                    font-size: map-get($MacPaw-body2-medium, size);
+                                    line-height: map-get($MacPaw-body2-medium, height);
+                                    letter-spacing: map-get($MacPaw-body2-medium, spacing);
+
+                                    &.author {
+                                        text-decoration: underline 2px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .info2 {
+                            .info {
+                                padding: 16px;
+                                padding-bottom: 0;
+
+                                .tag-title {
+                                    margin-bottom: 12px;
+
+                                    .tag {
+                                        svg {
+                                            path {
+                                                fill: $primary-green-500;
+                                            }
+
+                                            margin-right: 4px;
+                                        }
+
+                                        p {
+                                            display: flex;
+                                            align-items: center;
+                                            padding-top: 1px;
+                                            color: $primary-green-500;
+                                            font-family: map-get($MacPaw-caption-semibold, family);
+                                            font-weight: map-get($MacPaw-caption-semibold, weight);
+                                            font-size: map-get($MacPaw-caption-semibold, size);
+                                            line-height: map-get($MacPaw-caption-semibold, height);
+                                            letter-spacing: map-get($MacPaw-caption-semibold, spacing);
+                                            margin: 0;
+                                        }
+                                    }
+
+                                    .title {
+                                        p {
+                                            color: $neutral-blackwhite-100;
+                                            font-family: map-get($Lato-headline2-bold, family);
+                                            font-weight: map-get($Lato-headline2-bold, weight);
+                                            font-size: map-get($Lato-headline2-bold, size);
+                                            line-height: map-get($Lato-headline2-bold, height);
+                                            letter-spacing: map-get($Lato-headline2-bold, spacing);
+                                            margin: 0;
+                                        }
+                                    }
+                                }
+
+                                .sub-info {
+                                    .info {
+                                        padding: 0;
+                                        margin-bottom: 16px;
+
+                                        p {
+                                            color: $neutral-blackwhite-100;
+                                            font-family: map-get($MacPaw-label1-medium, family);
+                                            font-weight: map-get($MacPaw-label1-medium, weight);
+                                            font-size: map-get($MacPaw-label1-medium, size);
+                                            line-height: map-get($MacPaw-label1-medium, height);
+                                            letter-spacing: map-get($MacPaw-label1-medium, spacing);
+                                        }
+                                    }
+
+
+                                }
+                            }
+
+                            .read-time {
+                                border-top: 1px solid rgb(252, 252, 252, 0.5);
+                                height: 60px;
+                                padding-top: 16px;
+                                padding-bottom: 16px;
+                                display: flex;
+                                justify-content: center;
+
+                                p {
+                                    margin: 0;
+                                    padding-left: 10px;
+                                    color: $neutral-blackwhite-100;
+                                    font-family: map-get($MacPaw-label1-medium, family);
+                                    font-weight: map-get($MacPaw-label1-medium, weight);
+                                    font-size: map-get($MacPaw-label1-medium, size);
+                                    line-height: map-get($MacPaw-label1-medium, height);
+                                    letter-spacing: map-get($MacPaw-label1-medium, spacing);
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .trending-articles {
+                    padding: 0;
+
+                    .headline {
+                        margin-bottom: 16px;
+                    }
+
+                    .content-container {
+                        .trending-article {
+                            padding: 16px 0;
+
+                            &:hover {
+
+                                // padding: 14px 0;
+                                .state-layer {
+                                    transition: 0.3s ease;
+
+                                    .media {
+                                        &::before {
+                                            background-color: $surface-62-500-82;
+                                        }
+                                    }
+
+                                    .tag-text {
+                                        .text {
+                                            p {
+                                                color: $primary-green-500;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .state-layer {
+
+
+                                .media {
+                                    margin-right: 16px;
+                                    position: relative;
+                                    top: 0;
+                                    left: 0;
+
+                                    img {
+                                        width: 86px;
+                                        height: 86px;
+                                        object-fit: cover;
+                                        object-position: center;
+                                        border-radius: 5px;
+                                    }
+
+                                    &::before {
+                                        content: "";
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        width: 100%;
+                                        height: 100%;
+                                        transition: 0.3s ease;
+                                    }
+                                }
+
+                                .tag-text {
+                                    .tag {
+                                        margin-bottom: 4px;
+
+                                        svg {
+                                            path {
+                                                fill: $primary-green-500;
+                                            }
+
+                                            margin-right: 4px;
+                                        }
+
+                                        p {
+                                            display: flex;
+                                            align-items: center;
+                                            padding-top: 1px;
+                                            color: $primary-green-500;
+                                            font-family: map-get($MacPaw-caption-semibold, family);
+                                            font-weight: map-get($MacPaw-caption-semibold, weight);
+                                            font-size: map-get($MacPaw-caption-semibold, size);
+                                            line-height: map-get($MacPaw-caption-semibold, height);
+                                            letter-spacing: map-get($MacPaw-caption-semibold, spacing);
+                                            margin: 0;
+                                        }
+                                    }
+
+                                    .text {
+                                        p {
+                                            color: $neutral-blackwhite-100;
+                                            font-family: map-get($MacPaw-body1-medium, family);
+                                            font-weight: map-get($MacPaw-body1-medium, weight);
+                                            font-size: map-get($MacPaw-body1-medium, size);
+                                            line-height: map-get($MacPaw-body1-medium, height);
+                                            letter-spacing: map-get($MacPaw-body1-medium, spacing);
+                                            margin: 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .second-section {
+        background-color: $surface-62-500;
+        padding: 32px 0px;
+        border-radius: 24px;
+        margin-bottom: 56px;
+
+        .container {
+            padding: 0 16px;
+
+            .headline {
+                margin-bottom: 32px;
+            }
+
+            .section-content {
+                padding: 0 12px;
+                // column-gap: 24px;
+
+                .block-guide {
+                    padding: 0;
+                    width: 48%;
+                    height: 221px;
+                    background-image: url('./cs.png');
+                    background-size: cover;
+                    background-position: center;
+                    display: flex;
+                    align-items: flex-end;
+                    margin-bottom: 24px;
+                    border-radius: 8px;
+
+                    &.second {
+                        background-image: url('./dota2.png');
+                    }
+
+                    &.third {
+                        background-image: url('./genshin.jpg');
+                    }
+
+                    &.fourth {
+                        background-image: url('./shat.png');
+                    }
+
+                    &.fifth {
+                        background-image: url('./mine.jpg');
+                        width: 100%;
+                        margin: 0;
+                    }
+
+                    &:hover {
+                        transition: 0.3s ease;
+
+                        .guide-info {
+                            backdrop-filter: blur(5.5px);
+                            padding: 0;
+                            transition: 0.3s ease;
+                            height: 100%;
+                            justify-content: center;
+                            align-items: center;
+
+                            img {
+                                height: 41.5px;
+                                transition: 0.3s ease;
+                                width: auto;
+                            }
+
+                            svg {
+                                transition: 0.3s ease;
+                                height: 41.5px;
+                                width: auto;
+                            }
+                        }
+                    }
+
+                    .guide-info {
+                        transition: 0.3s ease;
+                        padding: 14px 21px;
+                        height: 60px;
+                        background-color: $surface-62-500-82;
+                        width: 100%;
+                        justify-content: center;
+                        align-items: center;
+
+                        svg {
+                            transition: 0.3s ease;
+                        }
+
+                        img {
+                            transition: 0.3s ease;
+                            height: 34px;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    .third-section {
+        margin-bottom: 56px;
+
+        .container {
+            margin: 0;
+
+            .row {
+                .section-recent-articles {
+                    margin-bottom: 56px;
+                    background-color: $surface-62-500;
+                    padding: 32px 16px;
+                    border-radius: 24px;
+
+                    .headline {
+                        margin-bottom: 32px;
+                    }
+
+                    .section-content {
+                        .container-article {
+                            margin-bottom: 56px;
+
+                            &.last {
+                                margin-bottom: 32px;
+                            }
+
+                            &:hover {
+                                .media {
+                                    &::before {
+                                        background-color: $surface-62-400;
+                                    }
+                                }
+                            }
+
+                            .media {
+                                border-radius: 8px;
+                                margin-bottom: 24px;
+                                display: flex;
+                                justify-content: center;
+                                position: relative;
+
+
+
+                                img {
+                                    border-radius: 8px;
+                                    width: 100%;
+                                    height: 235px;
+                                    object-fit: cover;
+                                    object-position: top;
+                                }
+
+                                &::before {
+                                    content: "";
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    transition: 0.3s ease;
+                                }
+                            }
+
+                            .text-content {
+                                margin-bottom: 24px;
+
+                                .tags-title {
+                                    margin-bottom: 16px;
+
+                                    .tags {
+                                        height: 24px;
+
+                                        svg {
+                                            path {
+                                                fill: $primary-green-500;
+                                            }
+
+                                            margin-right: 4px;
+                                        }
+
+                                        p {
+                                            display: flex;
+                                            align-items: center;
+                                            padding-top: 1px;
+                                            color: $primary-green-500;
+                                            font-family: map-get($MacPaw-caption-semibold, family);
+                                            font-weight: map-get($MacPaw-caption-semibold, weight);
+                                            font-size: map-get($MacPaw-caption-semibold, size);
+                                            line-height: map-get($MacPaw-caption-semibold, height);
+                                            letter-spacing: map-get($MacPaw-caption-semibold, spacing);
+                                            margin: 0;
+                                        }
+                                    }
+
+                                    .title {
+                                        p {
+                                            margin: 0;
+                                            color: $neutral-blackwhite-100;
+                                            font-family: map-get($MacPaw-headline2-semibold, family);
+                                            font-weight: map-get($MacPaw-headline2-semibold, weight);
+                                            font-size: map-get($MacPaw-headline2-semibold, size);
+                                            line-height: map-get($MacPaw-headline2-semibold, height);
+                                            letter-spacing: map-get($MacPaw-headline2-semibold, spacing);
+                                        }
+                                    }
+                                }
+
+                                .text {
+                                    p {
+                                        min-height: 72px;
+                                        max-height: 72px;
+                                        color: $neutral-blackwhite-100;
+                                        font-family: map-get($MacPaw-body2-regular, family);
+                                        font-weight: map-get($MacPaw-body2-regular, weight);
+                                        font-size: map-get($MacPaw-body2-regular, size);
+                                        line-height: map-get($MacPaw-body2-regular, height);
+                                        letter-spacing: map-get($MacPaw-body2-regular, spacing);
+                                    }
+                                }
+                            }
+
+                            .info {
+                                .left-content {
+                                    .profile-pictures {
+                                        margin-right: 16px;
+                                    }
+
+                                    .author-date {
+                                        .author {
+                                            p {
+                                                color: $neutral-blackwhite-600;
+                                                font-family: map-get($MacPaw-label3-regular, family);
+                                                font-weight: map-get($MacPaw-label3-regular, weight);
+                                                font-size: map-get($MacPaw-label3-regular, size);
+                                                line-height: map-get($MacPaw-label3-regular, height);
+                                                letter-spacing: map-get($MacPaw-label3-regular, spacing);
+                                                margin: 0;
+
+                                                &.author {
+                                                    text-decoration: underline 2px;
+                                                }
+                                            }
+                                        }
+
+                                        .data {
+                                            p {
+                                                color: $neutral-blackwhite-600;
+                                                font-family: map-get($MacPaw-label3-regular, family);
+                                                font-weight: map-get($MacPaw-label3-regular, weight);
+                                                font-size: map-get($MacPaw-label3-regular, size);
+                                                line-height: map-get($MacPaw-label3-regular, height);
+                                                letter-spacing: map-get($MacPaw-label3-regular, spacing);
+                                                margin: 0;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .right-content {
+                                    .btn-primary {
+                                        width: 132px;
+                                        height: 44px;
+                                        background: none;
+                                        border: 1px solid $neutral-blackwhite-600;
+                                        border-radius: 7px;
+                                        color: $neutral-blackwhite-600;
+                                        font-family: map-get($MacPaw-label1-medium, family);
+                                        font-weight: map-get($MacPaw-label1-medium, weight);
+                                        font-size: map-get($MacPaw-label1-medium, size);
+                                        line-height: map-get($MacPaw-label1-medium, height);
+                                        letter-spacing: map-get($MacPaw-label1-medium, spacing);
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .section-pagination {
+                        padding-top: 16px;
+                        height: 68px;
+
+                        .btn-primary {
+                            width: 250px;
+                            height: 52px;
+                            border: none;
+                            border-radius: 7px;
+                            background-color: $primary-green-500;
+                            color: $neutral-blackwhite-1000;
+                            font-family: map-get($MacPaw-label1-medium, family);
+                            font-weight: map-get($MacPaw-label1-medium, weight);
+                            font-size: map-get($MacPaw-label1-medium, size);
+                            line-height: map-get($MacPaw-label1-medium, height);
+                            letter-spacing: map-get($MacPaw-label1-medium, spacing);
+                        }
+                    }
+                }
+
+                .block-section-sidebar {
+                    padding: 0;
+
+                    .section-sidebar {
+                        margin-bottom: 56px;
+                        background-color: $surface-62-500;
+                        padding: 32px 16px;
+                        border-radius: 24px;
+
+                        .headline {
+                            margin-bottom: 16px;
+
+                            .p-headline {
+                                color: $secondary-orange-500;
+                            }
+                        }
+
+                        .content-container {
+                            .super-hot-article {
+                                height: 108px;
+
+                                &:hover {
+                                    transition: 0.3s ease;
+
+                                    .state-layer {
+                                        .media {
+                                            &::before {
+                                                background-color: $surface-62-500-82;
+                                            }
+                                        }
+
+                                        .tag-text {
+                                            .text {
+                                                p {
+                                                    color: $primary-green-500;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .state-layer {
+                                    padding: 16px 0;
+
+                                    .media {
+                                        margin-right: 16px;
+                                        position: relative;
+                                        border-radius: 5px;
+
+                                        img {
+                                            height: 76px;
+                                            width: 76px;
+                                            object-fit: cover;
+                                            object-position: center;
+                                            border-radius: 5px;
+
+                                        }
+
+                                        &::before {
+                                            content: "";
+                                            position: absolute;
+                                            top: 0;
+                                            left: 0;
+                                            width: 100%;
+                                            height: 100%;
+                                            transition: 0.3s ease;
+                                        }
+                                    }
+
+                                    .tag-text {
+                                        .tag {
+                                            height: 24px;
+                                            margin-bottom: 4px;
+
+                                            p {
+                                                display: flex;
+                                                align-items: center;
+                                                padding-top: 1px;
+                                                color: $neutral-blackwhite-600;
+                                                margin: 0;
+                                                font-family: map-get($MacPaw-caption-semibold, family);
+                                                font-weight: map-get($MacPaw-caption-semibold, weight);
+                                                font-size: map-get($MacPaw-caption-semibold, size);
+                                                line-height: map-get($MacPaw-caption-semibold, height);
+                                                letter-spacing: map-get($MacPaw-caption-semibold, spacing);
+                                            }
+
+                                            .point {
+                                                font-size: 20px;
+                                                width: 18px;
+                                                display: flex;
+                                                justify-content: center;
+                                            }
+
+                                            .gaming {
+                                                svg {
+                                                    path {
+                                                        fill: $primary-green-500;
+                                                    }
+                                                }
+
+                                                p {
+                                                    color: $primary-green-500;
+                                                }
+                                            }
+
+                                            .hot {
+                                                svg {
+                                                    path {
+                                                        fill: $secondary-orange-500;
+                                                    }
+                                                }
+
+                                                p {
+                                                    color: $secondary-orange-500;
+                                                }
+                                            }
+                                        }
+
+                                        .text {
+                                            height: 48px;
+
+                                            p {
+                                                margin: 0;
+                                                color: $neutral-blackwhite-100;
+                                                font-family: map-get($MacPaw-body2-medium, family);
+                                                font-weight: map-get($MacPaw-body2-medium, weight);
+                                                font-size: map-get($MacPaw-body2-medium, size);
+                                                line-height: map-get($MacPaw-body2-medium, height);
+                                                letter-spacing: map-get($MacPaw-body2-medium, spacing);
+                                            }
+                                        }
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .popular-search-request {
+                        padding: 0 16px;
+
+                        .row {
+                            width: 100%;
+                            // padding: 0 44px;
+                            justify-content: center;
+                            gap: 16px;
+                            margin: 0;
+
+                            a {
+                                border-radius: 100px;
+                                border: 1px solid $neutral-blackwhite-600;
+                                align-items: flex-start;
+                                padding: 6px 16px;
+                                padding-top: 8px;
+                                text-decoration: none;
+                                width: auto;
+                                color: $neutral-blackwhite-0;
+                                font-family: map-get($MacPaw-body2-regular, family);
+                                font-weight: map-get($MacPaw-body2-regular, weight);
+                                font-size: map-get($MacPaw-body2-regular, size);
+                                line-height: map-get($MacPaw-body2-regular, height);
+                                letter-spacing: map-get($MacPaw-body2-regular, spacing);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@import "./Home-responsive.scss"

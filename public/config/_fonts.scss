@@ -1,0 +1,195 @@
+$font-size-base: 16px;
+
+@function PXtoREM($px) {
+    @return $px / $font-size-base * 1rem;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+$MacPaw-display-semibold: (
+    family: "MacPawFixel-Semibold",
+    weight: 600,
+    size: PXtoREM(57px),
+    height: 64px,
+    spacing: 0
+);
+$MacPaw-headline1-bold: (
+    family: "MacPawFixel-Bold",
+    weight: 700,
+    size: PXtoREM(24px),
+    height: 32px,
+    spacing: 0
+);
+$MacPaw-headline2-semibold: (
+    family: "MacPawFixel-Semibold",
+    weight: 600,
+    size: PXtoREM(20px),
+    height: 28px,
+    spacing: 0
+);
+$MacPaw-body1-semibold: (
+    family: "MacPawFixel-Semibold",
+    weight: 600,
+    size: PXtoREM(18px),
+    height: 29px,
+    spacing: 0.25px
+);
+$MacPaw-body1-medium: (
+    family: "MacPawFixel-Medium",
+    weight: 500,
+    size: PXtoREM(18px),
+    height: 29px,
+    spacing: 0.25px
+);
+$MacPaw-body1-regular: (
+    family: "MacPawFixel-Regular",
+    weight: 400,
+    size: PXtoREM(18px),
+    height: 29px,
+    spacing: 0.25px
+);
+$MacPaw-body2-semibold: (
+    family: "MacPawFixel-Semibold",
+    weight: 600,
+    size: PXtoREM(16px),
+    height: 24px,
+    spacing: 0.5px
+);
+$MacPaw-body2-medium: (
+    family: "MacPawFixel-Medium",
+    weight: 500,
+    size: PXtoREM(16px),
+    height: 24px,
+    spacing: 0.5px
+);
+$MacPaw-body2-regular: (
+    family: "MacPawFixel-Regular",
+    weight: 400,
+    size: PXtoREM(16px),
+    height: 24px,
+    spacing: 0.5px
+);
+$MacPaw-body3-semibold: (
+    family: "MacPawFixel-Semibold",
+    weight: 600,
+    size: PXtoREM(14px),
+    height: 20px,
+    spacing: 0.25px
+);
+$MacPaw-body3-medium: (
+    family: "MacPawFixel-Medium",
+    weight: 500,
+    size: PXtoREM(14px),
+    height: 20px,
+    spacing: 0.25px
+);
+$MacPaw-body3-regular: (
+    family: "MacPawFixel-Regular",
+    weight: 400,
+    size: PXtoREM(14px),
+    height: 20px,
+    spacing: 0.25px
+);
+
+$MacPaw-label1-semibold: (
+    family: "MacPawFixel-Semibold",
+    weight: 600,
+    size: PXtoREM(18px),
+    height: 28px,
+    spacing: 0.25px
+);
+$MacPaw-label1-medium: (
+    family: "MacPawFixel-Medium",
+    weight: 500,
+    size: PXtoREM(18px),
+    height: 28px,
+    spacing: 0.25px
+);
+$MacPaw-label1-regular: (
+    family: "MacPawFixel-Regular",
+    weight: 400,
+    size: PXtoREM(18px),
+    height: 28px,
+    spacing: 0.25px
+);
+$MacPaw-label2-semibold: (
+    family: "MacPawFixel-Semibold",
+    weight: 600,
+    size: PXtoREM(16px),
+    height: 24px,
+    spacing: 1.3px
+);
+$MacPaw-label2-medium: (
+    family: "MacPawFixel-Medium",
+    weight: 500,
+    size: PXtoREM(16px),
+    height: 24px,
+    spacing: 0.5px
+);
+$MacPaw-label2-regular: (
+    family: "MacPawFixel-Regular",
+    weight: 400,
+    size: PXtoREM(16px),
+    height: 24px,
+    spacing: 0.5px
+);
+$MacPaw-label3-semibold: (
+    family: "MacPawFixel-Semibold",
+    weight: 600,
+    size: PXtoREM(14px),
+    height: 20px,
+    spacing: 1.3px
+);
+$MacPaw-label3-medium: (
+    family: "MacPawFixel-Medium",
+    weight: 500,
+    size: PXtoREM(14px),
+    height: 20px,
+    spacing: 0.1px
+);
+$MacPaw-label3-regular: (
+    family: "MacPawFixel-Regular",
+    weight: 400,
+    size: PXtoREM(14px),
+    height: 20px,
+    spacing: 0.1px
+);
+$MacPaw-caption-semibold: (
+    family: "MacPawFixel-Semibold",
+    weight: 600,
+    size: PXtoREM(12px),
+    height: 16px,
+    spacing: 1px
+);
+$Lato-headline1-bold: (
+    family: "Lato",
+    weight: 700,
+    size: PXtoREM(44px),
+    height: 52px,
+    spacing: 0
+);
+$Lato-headline2-bold: (
+    family: "Lato",
+    weight: 700,
+    size: PXtoREM(28px),
+    height: 36px,
+    spacing: 0
+);
+$Lato-headline3-bold: (
+    family: "Lato",
+    weight: 700,
+    size: PXtoREM(22px),
+    height: 32px,
+    spacing: 0
+);
+$Lato-headline3-regular: (
+    family: "Lato",
+    weight: 400,
+    size: PXtoREM(22px),
+    height: 32px,
+    spacing: 0
+);
+
+:root {
+    font-size: $font-size-base !important;
+}

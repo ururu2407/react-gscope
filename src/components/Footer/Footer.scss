@@ -1,0 +1,301 @@
+@import "/public/config/colors";
+@import "/public/config/fonts";
+
+@font-face {
+    font-family: "MacPawFixel-Bold";
+    src: url('/font/MacPawFixelText-Bold.woff2') format('woff2');
+    // font-weignt: 500;
+}
+
+@font-face {
+    font-family: "MacPawFixel-Semibold";
+    src: url('/font/MacPawFixelText-SemiBold.woff2') format('woff2');
+    // font-weignt: 500;
+}
+
+@font-face {
+    font-family: "MacPawFixel-Medium";
+    src: url('/font/MacPawFixelText-Medium.woff2') format('woff2');
+    // font-weignt: 500;
+}
+
+@font-face {
+    font-family: "MacPawFixel-Regular";
+    src: url('/font/MacPawFixelText-Regular.woff2') format('woff2');
+    // font-weignt: 500;
+}
+
+footer {
+    margin-top: 10px;
+    background-color: $surface-62-500;
+
+    .container {
+        padding: 56px 10px 32px;
+
+        .first-section {
+            margin: 0 0 72px 0;
+
+            .footer__subscribe {
+                margin: 0 0 56px 0;
+
+                .logo {
+                    margin-bottom: 32px;
+                    padding: 8px 0;
+                }
+
+                .newsletter__footer {
+                    .headline {
+                        margin-bottom: 20px;
+
+                        .mail {
+                            margin-right: 8px;
+
+                            svg {
+                                width: 56px;
+                                height: 56px;
+
+                                path {
+                                    fill: $primary-green-500;
+                                }
+                            }
+                        }
+
+                        p {
+                            height: 56px;
+                            display: flex;
+                            align-items: center;
+                            margin: 0;
+                            color: $neutral-blackwhite-100;
+                            font-family: map-get($MacPaw-body1-semibold, family);
+                            font-weight: map-get($MacPaw-body1-semibold, weight);
+                            font-size: map-get($MacPaw-body1-semibold, size);
+                            line-height: map-get($MacPaw-body1-semibold, height);
+                            letter-spacing: map-get($MacPaw-body1-semibold, spacing);
+                        }
+                    }
+
+                    .email__action {
+                        form {
+                            height: 56px;
+                            border-radius: 18px;
+
+                            &:hover {
+                                .hover {
+                                    transition: 0.3s ease-in-out;
+                                    background-color: $state-8;
+
+                                    .email {
+                                        svg {
+                                            path {
+                                                fill: $neutral-blackwhite-100;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .hover {
+                                border-radius: 18px;
+                                height: 100%;
+
+                                .email {
+                                    position: absolute;
+                                    width: 48px;
+                                    height: 56px;
+
+                                    svg {
+                                        path {
+                                            fill: $neutral-blackwhite-800;
+
+                                            &.focused {
+                                                fill: $neutral-blackwhite-100;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                input {
+                                    font-family: map-get($MacPaw-body2-regular, family);
+                                    font-weight: map-get($MacPaw-body2-regular, weight);
+                                    font-size: map-get($MacPaw-body2-regular, size);
+                                    line-height: map-get($MacPaw-body2-regular, height);
+                                    letter-spacing: map-get($MacPaw-body2-regular, spacing);
+
+                                    &[type='email'] {
+                                        padding-left: 48px;
+                                        border-radius: 18px;
+                                        border: 1px solid $neutral-blackwhite-800;
+                                        height: 100%;
+                                        color: $neutral-blackwhite-100;
+                                        width: 100%;
+                                        background: none;
+                                        outline: none;
+
+                                        &:focus {
+                                            border: 1px solid $primary-green-500;
+                                        }
+
+                                        &:focus~#svg g path {
+                                            fill: $neutral-blackwhite-100;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .error-message {
+                            width: 64%;
+                            color: $secondary-orange-500;
+                            font-family: map-get($MacPaw-body3-regular, family);
+                            font-weight: map-get($MacPaw-body3-regular, weight);
+                            font-size: map-get($MacPaw-body3-regular, size);
+                            line-height: map-get($MacPaw-body3-regular, height);
+                            letter-spacing: map-get($MacPaw-body3-regular, spacing);
+                            // content: "";
+                            visibility: hidden;
+                            transition: all 1s ease;
+                            margin: 7px 0;
+                        }
+
+                        button {
+                            width: 116px;
+                            height: 40px;
+                            margin-top: 20px;
+                            color: $neutral-blackwhite-600;
+                            background: none;
+                            border-radius: 7px;
+                            border: 1px solid $neutral-blackwhite-600;
+                            font-family: map-get($MacPaw-label2-medium, family);
+                            font-weight: map-get($MacPaw-label2-medium, weight);
+                            font-size: map-get($MacPaw-label2-medium, size);
+                            line-height: map-get($MacPaw-label2-medium, height);
+                            letter-spacing: map-get($MacPaw-label2-medium, spacing);
+                        }
+                    }
+                }
+            }
+
+            .footer__links {
+                padding-left: 0;
+                row-gap: 40px;
+                p {
+                    padding: 0 0 0 17px;
+                    color: $neutral-blackwhite-100;
+                    font-family: map-get($MacPaw-label1-semibold, family);
+                    font-weight: map-get($MacPaw-label1-semibold, weight);
+                    font-size: map-get($MacPaw-label1-semibold, size);
+                    line-height: map-get($MacPaw-label1-semibold, height);
+                    letter-spacing: map-get($MacPaw-label1-semibold, spacing);
+                    margin-bottom: 20px;
+                }
+
+                div {
+                    padding: 0;
+
+                    ul {
+                        padding: 0;
+
+                        li {
+                            padding: 10px 0;
+                            list-style: none;
+                            padding: 10px 0 10px 17px;
+
+                            &:hover {
+                                a {
+                                    color: $primary-green-500;
+                                }
+                            }
+
+                            a {
+                                text-decoration: none;
+                                color: $neutral-blackwhite-100;
+                                font-family: map-get($MacPaw-label1-regular, family);
+                                font-weight: map-get($MacPaw-label1-regular, weight);
+                                font-size: map-get($MacPaw-label1-regular, size);
+                                line-height: map-get($MacPaw-label1-regular, height);
+                                letter-spacing: map-get($MacPaw-label1-regular, spacing);
+                            }
+                        }
+                    }
+
+                    &.contacts {
+                        ul {
+                            .author {
+                                align-items: center;
+                                padding: 10px 0;
+
+                                svg {
+                                    padding-bottom: 2px;
+
+                                    path {
+                                        fill: $primary-green-500;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &.follow_us {
+                        // width: 208px;
+                        margin: 0;
+
+                        ul {
+                            padding-left: 17px;
+
+                            li {
+                                width: 52px;
+                                height: 52px;
+                                padding: 0;
+
+                                a {
+                                    height: 48px;
+                                    width: 48px;
+                                    padding: 8px 0;
+
+                                    svg {
+                                        path {
+                                            fill: $neutral-blackwhite-100;
+                                        }
+                                    }
+                                }
+
+                                &:hover {
+                                    a {
+                                        svg {
+                                            path {
+                                                fill: $primary-green-500;
+                                            }
+                                        }
+                                    }
+
+                                    background-color: $state-8;
+                                    border-radius: 50px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .second-section {
+            margin: 0;
+
+            .footer__copyright {
+                padding: 0 12px;
+
+                p {
+                    margin-bottom: 4px;
+                    color: $neutral-blackwhite-600;
+                    font-family: map-get($MacPaw-body2-regular, family);
+                    font-weight: map-get($MacPaw-body2-regular, weight);
+                    line-height: map-get($MacPaw-body2-regular, height);
+                    letter-spacing: map-get($MacPaw-body2-regular, spacing);
+                    font-size: map-get($MacPaw-body2-regular, size);
+                }
+            }
+        }
+    }
+}
+
+@import "./footer-responsive.scss"

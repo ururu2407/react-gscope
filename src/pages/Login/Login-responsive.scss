@@ -1,0 +1,36 @@
+@media screen and (min-width: 576px) {}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 992px) {}
+
+@media screen and (min-width: 1200px) {
+    .login {
+        >.container {
+            .main {
+                height: 699px;
+                padding: 44px 0;
+
+                .register-form {
+                    padding: 0 44px;
+                }
+
+                .img {
+                    padding-left: 60px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .login {
+        >.container {
+            .main {
+                .register-form {
+                    padding-right: 60px;
+                }
+            }
+        }
+    }
+}

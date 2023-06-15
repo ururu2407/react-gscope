@@ -1,0 +1,293 @@
+@import "/public/config/colors";
+@import "/public/config/fonts";
+
+@font-face {
+    font-family: "MacPawFixel-Bold";
+    src: url('/font/MacPawFixelText-Bold.woff2') format('woff2');
+    // font-weignt: 500;
+}
+
+@font-face {
+    font-family: "MacPawFixel-Semibold";
+    src: url('/font/MacPawFixelText-SemiBold.woff2') format('woff2');
+    // font-weignt: 500;
+}
+
+@font-face {
+    font-family: "MacPawFixel-Medium";
+    src: url('/font/MacPawFixelText-Medium.woff2') format('woff2');
+    // font-weignt: 500;
+}
+
+@font-face {
+    font-family: "MacPawFixel-Regular";
+    src: url('/font/MacPawFixelText-Regular.woff2') format('woff2');
+    // font-weignt: 500;
+}
+
+.login {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 50;
+    background-color: $neutral-blackwhite-1000;
+
+    header {
+        .container {
+            .row {
+                padding: 0;
+                height: 70px;
+                align-content: end;
+                margin: 0;
+
+                .back-icon {
+                    width: 48px;
+                    height: 48px;
+                    padding: 12px;
+                }
+
+                .logo {
+                    display: flex;
+                    justify-content: center;
+                    padding: 11px 0;
+                    width: 123px;
+                }
+
+                .clear {
+                    width: 48px;
+                    height: 48px;
+                    content: "";
+                }
+            }
+        }
+    }
+
+    >.container {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+
+        .main {
+            margin: 56px 16px 0px 16px;
+            background-color: $surface-62-500;
+            padding: 32px 0;
+            border-radius: 18px;
+            height: 674px;
+
+            .register-form {
+                padding: 0 18px;
+
+                >label {
+                    color: $neutral-blackwhite-100;
+                    width: 100%;
+                    height: 36px;
+                    display: flex;
+                    justify-content: center;
+                    font-family: map-get($Lato-headline2-bold, family);
+                    font-weight: map-get($Lato-headline2-bold, weight);
+                    font-size: map-get($Lato-headline2-bold, size);
+                    line-height: map-get($Lato-headline2-bold, height);
+                    letter-spacing: map-get($Lato-headline2-bold, spacing);
+                }
+
+                .inputs {
+                    margin-top: 32px;
+
+                    .textfield {
+                        margin-bottom: 24px;
+
+                        &.password {
+                            margin-bottom: 32px;
+                        }
+
+                        label {
+                            color: $neutral-blackwhite-100;
+                            font-family: map-get($MacPaw-body2-regular, family);
+                            font-weight: map-get($MacPaw-body2-regular, weight);
+                            font-size: map-get($MacPaw-body2-regular, size);
+                            line-height: map-get($MacPaw-body2-regular, height);
+                            letter-spacing: map-get($MacPaw-body2-regular, spacing);
+                        }
+
+                        .svg {
+                            position: absolute;
+                            width: 48px;
+                            height: 48px;
+                            padding: 12px;
+
+                            path {
+                                fill: $neutral-blackwhite-800;
+                            }
+                        }
+
+                        .input {
+                            margin-top: 10px;
+                            padding: 3px 0;
+
+                            &.password {
+                                input {
+                                    padding-right: 48px;
+                                }
+                            }
+
+                            .MuiInputBase-root {
+                                border: none;
+
+                                input {
+                                    color: $neutral-blackwhite-100;
+                                    font-family: map-get($MacPaw-body2-regular, family);
+                                    font-weight: map-get($MacPaw-body2-regular, weight);
+                                    font-size: map-get($MacPaw-body2-regular, size);
+                                    line-height: map-get($MacPaw-body2-regular, height);
+                                    letter-spacing: map-get($MacPaw-body2-regular, spacing);
+                                    border: none;
+                                    &[type='password'] {
+                                        font-size: 30px;
+                                    }
+                                }
+
+                                .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+                                    border: 1px solid $neutral-blackwhite-800;
+                                }
+
+                                .MuiInputAdornment-root {
+                                    button {
+                                        svg {
+                                            path {
+                                                fill: $neutral-blackwhite-100;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .MuiFormControl-root {
+                                border: none;
+
+                                &:focus {
+                                    border: none;
+
+                                }
+
+                                .MuiInputBase-root {
+                                    border: none;
+
+                                    .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+                                        border: 1px solid $neutral-blackwhite-800;
+                                    }
+                                }
+                            }
+
+                            input {
+                                color: $neutral-blackwhite-100;
+                                font-family: map-get($MacPaw-body2-regular, family);
+                                font-weight: map-get($MacPaw-body2-regular, weight);
+                                font-size: map-get($MacPaw-body2-regular, size);
+                                line-height: map-get($MacPaw-body2-regular, height);
+                                letter-spacing: map-get($MacPaw-body2-regular, spacing);
+                                height: 48px;
+                                background: none;
+                                border: 1px solid $neutral-blackwhite-800;
+                                border-radius: 7px;
+                                width: 100%;
+                                padding: 0;
+                                padding-left: 48px;
+                                outline: none;
+                            }
+                        }
+                    }
+                }
+
+                .actions {
+                    .buttons {
+                        .create-btn {
+                            background-color: $primary-green-500;
+                            border: none;
+                            border-radius: 18px;
+                            height: 52px;
+                            width: 100%;
+                            color: $neutral-blackwhite-1000;
+                            font-family: map-get($MacPaw-label1-medium, family);
+                            font-weight: map-get($MacPaw-label1-medium, weight);
+                            font-size: map-get($MacPaw-label1-medium, size);
+                            line-height: map-get($MacPaw-label1-medium, height);
+                            letter-spacing: map-get($MacPaw-label1-medium, spacing);
+                        }
+
+                        .line {
+                            content: "";
+                            height: 1px;
+                            width: 100%;
+                            background-color: $neutral-blackwhite-800;
+                            margin: 24px 0;
+                        }
+
+                        .google-btn {
+                            svg {
+                                margin-right: 8px;
+                            }
+
+                            background: none;
+                            border: 1px solid $neutral-blackwhite-800;
+                            border-radius: 18px;
+                            height: 52px;
+                            width: 100%;
+                            color: $neutral-blackwhite-600;
+                            font-family: map-get($MacPaw-label1-medium, family);
+                            font-weight: map-get($MacPaw-label1-medium, weight);
+                            font-size: map-get($MacPaw-label1-medium, size);
+                            line-height: map-get($MacPaw-label1-medium, height);
+                            letter-spacing: map-get($MacPaw-label1-medium, spacing);
+                        }
+                    }
+                }
+
+                .form-footer {
+                    margin-top: 16px;
+                    width: 100%;
+                    justify-content: center;
+
+                    label {
+                        margin-right: 6px;
+                        color: $neutral-blackwhite-100;
+                        font-family: map-get($MacPaw-body2-regular, family);
+                        font-weight: map-get($MacPaw-body2-regular, weight);
+                        font-size: map-get($MacPaw-body2-regular, size);
+                        line-height: map-get($MacPaw-body2-regular, height);
+                        letter-spacing: map-get($MacPaw-body2-regular, spacing);
+                    }
+
+                    a {
+                        color: $primary-green-500;
+                        font-family: map-get($MacPaw-body2-regular, family);
+                        font-weight: map-get($MacPaw-body2-regular, weight);
+                        font-size: map-get($MacPaw-body2-regular, size);
+                        line-height: map-get($MacPaw-body2-regular, height);
+                        letter-spacing: map-get($MacPaw-body2-regular, spacing);
+                    }
+                }
+            }
+
+            .img {
+                padding: 0 44px;
+
+                .image {
+                    width: 100%;
+                    height: 100%;
+
+                    img {
+                        border-radius: 12px;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@import "./Login-responsive.scss"
