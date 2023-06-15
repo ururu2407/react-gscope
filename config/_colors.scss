@@ -1,0 +1,32 @@
+$neutral-blackwhite-1000: #191A1C;
+$neutral-blackwhite-900: #262728;
+$neutral-blackwhite-800: #5b5b5b;
+$neutral-blackwhite-700: #838383;
+$neutral-blackwhite-600: #ABABAB;
+$neutral-blackwhite-500: #c0c0c0;
+$neutral-blackwhite-400: #d9d9d9;
+$neutral-blackwhite-300: #ebebeb;
+$neutral-blackwhite-200: #f0f0f0;
+$neutral-blackwhite-100: #f0f0f0;
+$neutral-blackwhite-0: #fff;
+
+$secondary-orange-500: #ff5c00;
+
+$primary-green-500: #28d377;
+$primary-green-400: #4ce191;
+$primary-green-300: #86ebb4;
+$primary-green-200: #c2ffde;
+$primary-green-100: #ecfff5;
+
+$surface-62-500: #242425; 
+$surface-62-500-82: rgba(36, 36, 37, 0.82); 
+// rgba(43, 43, 43, 0.62);
+$surface-62-400: rgba(43, 43, 43, 0.62); 
+// rgba(119, 119, 119, 0.62)
+$state-12: rgba(241, 255, 248, 0.12);
+$state-8: rgba(241, 255, 248, 0.08);
+
+$mobile-hover: (
+    border-radius: 100px,
+    background-color: $state-12
+);
